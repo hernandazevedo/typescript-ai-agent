@@ -1,6 +1,6 @@
 # TypeScript AI Agent
 
-A production-ready AI agent built with TypeScript, converted from the [Kotlin AI Agent with Koog framework](https://github.com/hernandazevedo/kotlin-ai-agent-koog). Features include file system operations, shell command execution, interactive confirmation with diff preview, MCP integration for Git operations, and specialized sub-agents.
+A production-ready AI agent built with TypeScript. Features include file system operations, shell command execution, interactive confirmation with diff preview, MCP integration for Git operations, and specialized sub-agents.
 
 ## Features
 
@@ -258,7 +258,7 @@ const codeSearchTool = createCodeSearchAgentTool(apiKey, fileSystem, projectPath
 
 ## Differences from Kotlin Version
 
-### What's Converted
+### Features
 
 ✅ Core abstractions (Tool, FileSystemProvider, ConfirmationHandler)
 ✅ File system tools (list, read, create, edit)
@@ -345,8 +345,6 @@ The agent uses carefully crafted system prompts to guide behavior:
 
 ## Contributing
 
-This is a conversion of the Kotlin AI Agent. To contribute:
-
 1. Maintain compatibility with the original feature set
 2. Follow TypeScript best practices
 3. Keep the tool-based architecture
@@ -359,10 +357,7 @@ Apache 2.0 (following the original Kotlin project)
 
 ## Credits
 
-Converted from [Kotlin AI Agent with Koog Framework](https://github.com/hernandazevedo/kotlin-ai-agent-koog) by Hernand Azevedo.
-
 Original implementation follows best practices from:
-- [JetBrains Koog Framework](https://github.com/JetBrains/koog)
 - [Building AI Agents in Kotlin Blog Series](https://blog.jetbrains.com/ai/)
 
 ## References
