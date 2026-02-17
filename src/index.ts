@@ -155,7 +155,8 @@ async function main() {
   ];
 
   // Discover MCP tools
-  const mcpServerUrl = process.env.MCP_SERVER_URL || 'http://localhost:8080/mcp';
+  const mcpBaseUrl = process.env.MCP_SERVER_URL || 'http://localhost:8080';
+  const mcpServerUrl = mcpBaseUrl.endsWith('/mcp') ? mcpBaseUrl : `${mcpBaseUrl}/mcp`;
   console.log(chalk.gray(`[MCP] Checking server at ${mcpServerUrl}...`));
 
   const mcpTools = await McpToolDiscovery.discoverTools(mcpServerUrl, false);
